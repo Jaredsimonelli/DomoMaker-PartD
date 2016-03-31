@@ -6,6 +6,10 @@ var loginPage = function(req, res){
 	res.render('login', { csrfToken: req.csrfToken() });
 };
 
+var domoPage = function(req, res){
+	res.render('domo', { csrfToken: req.csrfToken() });
+};
+
 var signupPage = function(req, res){
 	res.render('signup', { csrfToken: req.csrfToken() });
 };
@@ -72,3 +76,4 @@ module.exports.login = login;
 module.exports.logout = logout;
 module.exports.signupPage = signupPage;
 module.exports.signup = signup;
+module.exports.domoPage = domoPage;
