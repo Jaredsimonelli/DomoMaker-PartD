@@ -163,6 +163,19 @@ nav:nth-child(1) {
     background-color: #338acc;
 }
 
+.domoTitleA {
+	text-align: center;
+	font: 50px arial, sans-serif;
+	margin-top: 25px;
+	margin-bottom: 5px;
+}
+
+.domoTitleB {
+	text-align: center;
+	font: 25px arial, sans-serif;
+	
+}
+
 #user, #pass, #pass2 {
     text-align: center;
     font-size: 1.1em;
@@ -245,6 +258,37 @@ nav:nth-child(1) {
     border-color: rgba(255,255,255, 0.8);
     transition: background-color 2.6s ease-out;
     background-color: #66bfff;
+}
+
+.newDomo {
+	position: relative;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 2px solid #55acee;
+    border-radius: 4px;
+    background-color: #55acee;
+    padding: 10px;
+    min-height:60px;
+    overflow: hidden;
+}
+
+.newDomo:hover .info{
+	display: block;
+    transition: border-color 0.2s ease-out;
+    border-color: rgba(255,255,255, 0.8);
+    transition: background-color 2.6s ease-out;
+    background-color: #66bfff;
+	width: 95%;
+	height: 25%;
+}
+
+.info{
+	display: none;
+	margin-top: 8%;
+	text-align: center;
+	font: 25px arial, sans-serif;
 }
 
 img.domoFace {

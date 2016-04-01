@@ -7,18 +7,25 @@ block body
 			img#logo(src="/assets/img/face.png", alt="face logo")
 		.navlink
 			a(href="/logout") Log out
-			
+	section#Top
+		h1.domoTitleA These are your Domo's
+		h1.domoTitleB Hover over your domos for more detailed info
 	section#domos
 		if !domos || domos.length == 0
 			div.domo
 				h3.emptyDomo No Domos yet
 		else
 			each val in domos
-				div.domo
+				div.newDomo
 					img(class="domoFace", src="/assets/img/domoface.jpeg", alt="domo face")
 					h3.domoName Name: #{val.name}
 					h3.domoAge Age: #{val.age}
 					h3.domoLevel Level: #{val.level}
+					p.info
+						| Your name is #{val.name}, you were born in space...
+						| your are #{val.age} years old, you have lived you life in peace..Until the great space wars errupted, 
+						| you managed to increase your power level to #{val.level} and with your new power you ended the war! 
+						| THE END
 	#domoMessage
 		img#speech(src="/assets/img/speech.png", alt="speech box")
 		h3
